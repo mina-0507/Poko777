@@ -1,0 +1,66 @@
+goods = {
+    'Лампа': '12345',
+    'Стол': '23456',
+    'Диван': '34567',
+    'Стул': '45678',
+}
+
+store = {
+    '12345': [
+        {'quantity': 27, 'price': 42},
+    ],
+    '23456': [
+        {'quantity': 22, 'price': 510},
+        {'quantity': 32, 'price': 520},
+    ],
+    '34567': [
+        {'quantity': 2, 'price': 1200},
+        {'quantity': 1, 'price': 1150},
+    ],
+    '45678': [
+        {'quantity': 50, 'price': 100},
+        {'quantity': 12, 'price': 95},
+        {'quantity': 43, 'price': 97},
+    ],
+}
+
+lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
+
+lamp_code = goods['Лампа']
+lamps_item = store[lamp_code][0]
+lamps_quantity = lamps_item['quantity']
+lamps_price = lamps_item['price']
+lamps_cost = lamps_quantity * lamps_price
+print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+
+
+table_code = goods['Стол']
+table_batch1 = store[table_code][0]
+table_batch2 = store[table_code][1]
+
+table_quantity_total = table_batch1['quantity'] + table_batch2['quantity']
+table_cost_total = (table_batch1['quantity'] * table_batch1['price'] + 
+                    table_batch2['quantity'] * table_batch2['price'])
+print('Стол -', table_quantity_total, 'шт, стоимость', table_cost_total, 'руб')
+
+sofa_code = goods['Диван']
+sofa_batch1 = store[sofa_code][0]
+sofa_batch2 = store[sofa_code][1]
+
+sofa_quantity_total = sofa_batch1['quantity'] + sofa_batch2['quantity']
+sofa_cost_total = (sofa_batch1['quantity'] * sofa_batch1['price'] + 
+                   sofa_batch2['quantity'] * sofa_batch2['price'])
+print('Диван -', sofa_quantity_total, 'шт, стоимость', sofa_cost_total, 'руб')
+
+chair_code = goods['Стул']
+chair_batch1 = store[chair_code][0]
+chair_batch2 = store[chair_code][1]
+chair_batch3 = store[chair_code][2]
+
+chair_quantity_total = (chair_batch1['quantity'] + 
+                        chair_batch2['quantity'] + 
+                        chair_batch3['quantity'])
+chair_cost_total = (chair_batch1['quantity'] * chair_batch1['price'] + 
+                    chair_batch2['quantity'] * chair_batch2['price'] + 
+                    chair_batch3['quantity'] * chair_batch3['price'])
+print('Стул -', chair_quantity_total, 'шт, стоимость', chair_cost_total, 'руб')
