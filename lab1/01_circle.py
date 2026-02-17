@@ -9,7 +9,7 @@ point_1 = (23, 34)
 
 
 distance_1=(23**2+34**2)**(1/2)
-if distance_1 > radius:
+if distance_1 < radius:
     print("True")
 else:
     print("False")
