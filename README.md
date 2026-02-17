@@ -24,7 +24,7 @@
 5. То же самое проделываем с другой точкой - point_2.
 
 #### Результат:
-<img width="1666" height="98" alt="image" src="https://github.com/user-attachments/assets/8ee6f8ee-d243-428d-9504-1627df1be53e" />
+<img width="195" height="78" alt="image" src="https://github.com/user-attachments/assets/20c5a69a-196e-4f6b-9912-31c48b3c2256" />
 
 
 
