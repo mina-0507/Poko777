@@ -13,4 +13,6 @@ word4 = secret_message[3][12:6:-1]
 word5 = secret_message[4][20:15:-1]
 
 message = f"{word1} {word2} {word3} {word4} {word5}"
-print(message)
+
+def soobshenie():
+    print(message)

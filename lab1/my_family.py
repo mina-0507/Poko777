@@ -18,4 +18,6 @@ Allheight = 0
 for j in my_family_height:
     Allheight += j[1]
 
-print(f'Общий рост семьи - {Allheight} см')
+def semia():
+    print(f'Общий рост моей семьи - {Allheight} см')
+    print(height_father())

@@ -31,7 +31,7 @@ lamps_item = store[lamp_code][0]
 lamps_quantity = lamps_item['quantity']
 lamps_price = lamps_item['price']
 lamps_cost = lamps_quantity * lamps_price
-print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+
 
 
 table_code = goods['Стол']
@@ -41,7 +41,7 @@ table_batch2 = store[table_code][1]
 table_quantity_total = table_batch1['quantity'] + table_batch2['quantity']
 table_cost_total = (table_batch1['quantity'] * table_batch1['price'] + 
                     table_batch2['quantity'] * table_batch2['price'])
-print('Стол -', table_quantity_total, 'шт, стоимость', table_cost_total, 'руб')
+
 
 sofa_code = goods['Диван']
 sofa_batch1 = store[sofa_code][0]
@@ -50,7 +50,7 @@ sofa_batch2 = store[sofa_code][1]
 sofa_quantity_total = sofa_batch1['quantity'] + sofa_batch2['quantity']
 sofa_cost_total = (sofa_batch1['quantity'] * sofa_batch1['price'] + 
                    sofa_batch2['quantity'] * sofa_batch2['price'])
-print('Диван -', sofa_quantity_total, 'шт, стоимость', sofa_cost_total, 'руб')
+
 
 chair_code = goods['Стул']
 chair_batch1 = store[chair_code][0]
@@ -63,4 +63,11 @@ chair_quantity_total = (chair_batch1['quantity'] +
 chair_cost_total = (chair_batch1['quantity'] * chair_batch1['price'] + 
                     chair_batch2['quantity'] * chair_batch2['price'] + 
                     chair_batch3['quantity'] * chair_batch3['price'])
-print('Стул -', chair_quantity_total, 'шт, стоимость', chair_cost_total, 'руб')
+
+
+
+def mebel():
+    print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+    print('Стол -', table_quantity_total, 'шт, стоимость', table_cost_total, 'руб')
+    print('Диван -', sofa_quantity_total, 'шт, стоимость', sofa_cost_total, 'руб')
+    print('Стул -', chair_quantity_total, 'шт, стоимость', chair_cost_total, 'руб')

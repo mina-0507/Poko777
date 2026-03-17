@@ -41,7 +41,9 @@ sweets = {
     ],
 }
 
-for sweet, shops_list in sweets.items():
-    print(sweet)
-    for shop_info in shops_list:
-        print(f"   {shop_info['shop']}: {shop_info['price']} руб.")
+
+def magazine():
+    for sweet, shops_list in sweets.items():
+        print(sweet)
+        for shop_info in shops_list:
+            print(f"   {shop_info['shop']}: {shop_info['price']} руб.")
